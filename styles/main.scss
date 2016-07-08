@@ -15,14 +15,12 @@ $mainfont: "Roboto";
 // Colors
 // ##################
 
-$pink: #f95a61;
-$black: #282828;
-$blush: #fbcfc6;
-$gold: #d8ae64;
-$green: #074232;
-$gray: #9a9a9a;
-$paleblue: #e4e9e5;
-$navy: #2a4758;
+$pink: #f05b62;
+$darkblue: #2a4758;
+$earthyellow: #d8ae64;
+$mauve: #a05258;
+$white: #fff;
+$darkgray: #333;
 
 * { @include box-sizing(border-box); }
 
@@ -45,7 +43,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  color: $black;
+  color: $darkgray;
   text-transform: uppercase;
 }
 
@@ -62,7 +60,7 @@ h2{
   padding: .5rem;
   line-height: 1.3rem;
   a {
-    color: $black;
+    color: $darkgray;
   }
 }
 
@@ -73,7 +71,7 @@ h3{
   padding: .1rem;
   line-height: 1.3rem;
   a {
-    color: $black;
+    color: $darkgray;
   }
 }
 
@@ -86,12 +84,12 @@ p {
     font-size: 1.025rem;
     font-weight: 300;
     letter-spacing: .05rem;
-    color: $gray;
+    color: $darkgray;
     line-weight: .3rem;
     line-height: 1.5rem;
   a {
       font-style: italic;
-      color: $gold;
+      color: $earthyellow;
     &:hover{
       color: $pink;
     }
@@ -114,7 +112,7 @@ a {
     padding: .1rem 0;
     margin-bottom: 5px;
     &:hover{
-      color: $gold;
+      color: $earthyellow;
       font-style: italic;
     }
   }
@@ -148,11 +146,11 @@ a {
   font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: .14rem;
-  background-color: $gold;
+  background-color: $earthyellow;
   padding: .5rem;
   &:hover {
-    background-color: $black;
-    color: $blush;
+    background-color: $darkgray;
+    color: $mauve;
   }
 }
 
@@ -193,24 +191,22 @@ hr {
     letter-spacing: .1rem;
     &.pink {
       background-color: $pink;
-      color: white;
     }
-    &.black {
-      background-color: $black;
+    &.darkgray {
+      background-color: $darkgray;
     }
-    &.gold {
-      background-color: $gold;
+    &.earthyellow {
+      background-color: $earthyellow;
     }
-    &.blush {
-      background-color: $blush;
-      color: $black;
+    &.mauve {
+      background-color: $mauve;
     }
-    &.paleblue {
-      background-color: $paleblue;
-      color: $black;
+    &.white {
+      background-color: $white;
+      color: $darkgray;
     }
-    &.navy {
-      background-color: $navy;
+    &.darkblue {
+      background-color: $darkblue;
     }
   }
 }
@@ -235,8 +231,8 @@ hr {
     margin-bottom: 0em;
   }
   a:hover {
-    background-color: $black;
-    color: $blush;
+    background-color: $darkgray;
+    color: $mauve;
   }
 }
 .components {
@@ -251,7 +247,7 @@ hr {
       margin-bottom: 25px;
     }
     .button-second {
-      background-color: $paleblue;
+      background-color: $white;
       color: $pink;
       &:hover {
         background-color: $pink;
@@ -259,7 +255,7 @@ hr {
       }
     }
     a:hover {
-      color: $gold;
+      color: $earthyellow;
     }
   }
 
@@ -280,7 +276,7 @@ hr {
     h2 a {
       color: $pink;
       &:hover{
-        color: $gold;
+        color: $earthyellow;
         font-style: italic;
       }
     }
@@ -294,7 +290,7 @@ hr {
       margin: auto;
     }
     h2 {
-      color: $gold;
+      color: $earthyellow;
       padding: 0px 5px 6px 5px;
       display: inline-block;
       margin: 1rem auto 3rem auto;
@@ -313,23 +309,23 @@ hr {
     font-size: .8em;
     height: 25px;
     width: 25px;
-    color: $black;
+    color: $darkgray;
     border-radius: 50%;
     margin: 2px;
     padding-top: 6px;
     text-align: center;
     &:hover {
-      background: $gold;
+      background: $earthyellow;
       color: #fff;
     }
   }
   &.media-links-rounded{
     a {
       color: white;
-      background-color: $gold;
+      background-color: $earthyellow;
       &:hover {
-        background-color: $black;
-        color: $blush;
+        background-color: $darkgray;
+        color: $mauve;
       }
     }
   }
@@ -339,8 +335,9 @@ footer {
   text-align: center;
   padding: 40px;
   height: 120px;
-  background-color: $navy;
+  background-color: $darkblue;
   p {
-    color: $blush;
+    color: $white;
+    font-style: italic;
   }
 }
